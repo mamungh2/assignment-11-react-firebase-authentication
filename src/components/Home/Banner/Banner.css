@@ -1,0 +1,17 @@
+.banner {
+    background-image: url("../../../images/courierbanner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.banner-text {
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.banner-text h1 {
+    font-size: 50px;
+}
+.banner-text p{
+    font-size: 18px;
+}

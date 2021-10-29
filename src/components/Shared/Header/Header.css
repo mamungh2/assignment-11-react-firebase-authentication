@@ -1,0 +1,10 @@
+.header ul li a {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 12px;
+    text-decoration: none;
+}
+.header ul {
+    list-style: none;
+}
