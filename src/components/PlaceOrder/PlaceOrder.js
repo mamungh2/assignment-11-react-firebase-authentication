@@ -28,6 +28,7 @@ const PlaceOrder = () => {
         const phone = phoneRef.current.value;
         const newOrder = { name, email, address1, address2, phone };
         newOrder.serviceRef = service._id;
+        newOrder.status = 'Pending';
 
         fetch('http://localhost:5000/orders', {
             method: 'POST',

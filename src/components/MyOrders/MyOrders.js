@@ -26,7 +26,7 @@ const MyOrders = () => {
 
     return (
         <div>
-            <h1>This is order page and private route</h1>
+            <h1 className="text-center mt-4 mb-3">My orders</h1>
             {
                 orders.map(order => <Order key={order._id} order={order}></Order>)
             }

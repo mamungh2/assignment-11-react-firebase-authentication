@@ -16,10 +16,13 @@ import AuthProvider from './context/AuthProvider';
 function App() {
   return (
     <div className="App">
+      {/* use authprovider to get all data from context api */}
       <AuthProvider>
         <Router>
+          {/* share component */}
           <Header></Header>
 
+          {/* all switch to route various components */}
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -33,6 +36,8 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
+
+            {/* private route */}
             <PrivateRoute path="/placeorder/:serviceId">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
@@ -42,6 +47,7 @@ function App() {
             <PrivateRoute path="/manageallorders">
               <ManageAllOrders></ManageAllOrders>
             </PrivateRoute>
+
             <Route path="/addservice">
               <AddService></AddService>
             </Route>
@@ -50,6 +56,7 @@ function App() {
             </Route>
           </Switch>
 
+          {/* share commponent */}
           <Footer></Footer>
         </Router>
       </AuthProvider>
