@@ -7,7 +7,6 @@ const Order = ({ order }) => {
     const { _id, name, email, address1, address2, phone, serviceRef, status } = order;
     const location = useLocation();
     const currentLocation = location.pathname;
-    console.log(currentLocation);
 
     const handleDeleteOrder = id => {
         const proceed = window.confirm("Are you sure to delete?");
