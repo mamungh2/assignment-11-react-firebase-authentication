@@ -3,6 +3,7 @@ import './App.css';
 import AddService from './components/AddService/AddService';
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
+import ManageAllOrders from './components/ManageAllOrders/ManageAllOrders';
 import MyOrders from './components/MyOrders/MyOrders';
 import NotFound from './components/NotFound/NotFound';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
@@ -37,6 +38,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/myorders">
               <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/manageallorders">
+              <ManageAllOrders></ManageAllOrders>
             </PrivateRoute>
             <Route path="/addservice">
               <AddService></AddService>

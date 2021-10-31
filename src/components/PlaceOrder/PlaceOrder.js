@@ -27,7 +27,8 @@ const PlaceOrder = () => {
         const address2 = address2Ref.current.value;
         const phone = phoneRef.current.value;
         const newOrder = { name, email, address1, address2, phone };
-        newOrder.orderId = service._id;
+        newOrder.serviceRef = service._id;
+
         fetch('http://localhost:5000/orders', {
             method: 'POST',
             headers: {
@@ -42,7 +43,6 @@ const PlaceOrder = () => {
                     e.target.reset();
                 }
             })
-        console.log(newOrder);
     }
 
     return (

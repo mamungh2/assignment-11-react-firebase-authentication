@@ -14,7 +14,6 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
     const signInUsingPopup = () => {
-        setUserName(user.displayName);
         return signInWithPopup(auth, googleProvider)
     };
 
@@ -29,16 +28,6 @@ const useFirebase = () => {
             setIsLoading(false);
         })
     }, []);
-
-
-
-    const setUserName = () => {
-        updateProfile(auth.currentUser, { displayName: user.displayName })
-            .then(result => { })
-            .catch(error => {
-                setError(error.message);
-            })
-    }
 
     const logOut = () => {
         setIsLoading(true);

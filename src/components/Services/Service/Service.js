@@ -1,13 +1,9 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
     const { _id, title, description, image, price } = service;
-    // const history = useHistory();
-    // const handleBookNow = id => {
-    //     console.log(id);
-    //     history.push('/placeorder');
-    // }
+
     return (
         <div>
             <div className="col h-100">

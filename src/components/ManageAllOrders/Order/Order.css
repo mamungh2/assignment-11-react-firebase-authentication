@@ -1,0 +1,10 @@
+.order-item {
+    border: 1px solid lightgray;
+    box-shadow: 4px 4px 10px lightgray;
+    margin-bottom: 18px;
+    border-radius: 5px;
+}
+.order-item p{
+    margin-bottom: 0;
+    font-size: 18px;
+}
