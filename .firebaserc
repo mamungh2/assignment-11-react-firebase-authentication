@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "hosting": {
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    "default": "react-firebase-authentic-f71b8"
+  }
+}
