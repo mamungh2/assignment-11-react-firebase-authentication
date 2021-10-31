@@ -11,30 +11,30 @@ const Reward = () => {
                     <img className="bg-white w-75 " src={reward} alt="" />
                 </div>
                 <div className="col-md-7">
-                    <form class="row">
+                    <form className="row">
                         <div className="col-md-6 mt-3">
                             <h4>Your details:</h4>
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Name" />
+                            <div className="col-md-10 mb-3">
+                                <input type="text" className="form-control" placeholder="Name" />
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="email" class="form-control" placeholder="Email" />
+                            <div className="col-md-10 mb-3">
+                                <input type="email" className="form-control" placeholder="Email" />
                             </div>
-                            <div class="col-md-6">
-                                <input type="password" class="form-control" placeholder="Password" />
+                            <div className="col-md-10">
+                                <input type="password" className="form-control" placeholder="Password" />
                             </div>
                         </div>
                         <div className="col-md-6 mt-3">
                             <h4>Your friend's details:</h4>
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Name" />
+                            <div className="col-md-10 mb-3">
+                                <input type="text" className="form-control" placeholder="Name" />
                             </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Email" />
+                            <div className="col-md-10">
+                                <input type="email" className="form-control" placeholder="Email" />
                             </div>
                         </div>
-                        <div class="col-12 text-center">
-                            <button type="button" class="btn btn-primary px-5 mt-4">Sign up</button>
+                        <div className="col-12 text-center">
+                            <button type="button" className="btn btn-primary px-5 mt-4">Sign up</button>
                         </div>
                     </form>
                 </div>

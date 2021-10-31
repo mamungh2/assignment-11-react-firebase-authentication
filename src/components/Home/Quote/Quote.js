@@ -7,74 +7,74 @@ const Quote = () => {
             <h1 className="text-center mb-5 mt-5"><span className="text-success fw-bold">Get</span> instant quote</h1>
             <div className="row d-flex justify-content-center">
                 <div className="col-md-8">
-                    <form class="row g-3">
+                    <form className="row g-3">
                         <div className="row mb-3">
-                            <div class="col-md-6">
-                                <label for="fromState" class="form-label">From</label>
-                                <select id="fromState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option selected>Bangladesh</option>
+                            <div className="col-md-6">
+                                <label htmlFor="fromState" className="form-label">From</label>
+                                <select id="fromState" className="form-select">
+                                    <option>Choose...</option>
+                                    <option defaultValue>Bangladesh</option>
                                     <option>India</option>
                                     <option>Pakistan</option>
                                     <option>Japan</option>
                                 </select>
                             </div>
-                            <div class="col-md-3">
-                                <label for="postCode" class="form-label">Postcode</label>
-                                <input type="text" class="form-control" id="postCode" />
+                            <div className="col-md-3">
+                                <label htmlFor="postCode" className="form-label">Postcode</label>
+                                <input type="text" className="form-control" id="postCode" />
                             </div>
                         </div>
                         <div className="row mb-2">
-                            <div class="col-md-6">
-                                <label for="toState" class="form-label">To</label>
-                                <select id="toState" class="form-select">
-                                    <option selected>Choose...</option>
+                            <div className="col-md-6">
+                                <label htmlFor="toState" className="form-label">To</label>
+                                <select id="toState" className="form-select">
+                                    <option defaultValue>Choose...</option>
                                     <option>India</option>
                                     <option>Pakistan</option>
                                     <option>Japan</option>
                                 </select>
                             </div>
-                            <div class="col-md-3">
-                                <label for="postCode2" class="form-label">Postcode</label>
-                                <input type="text" class="form-control" id="postCode2" />
+                            <div className="col-md-3">
+                                <label htmlFor="postCode2" className="form-label">Postcode</label>
+                                <input type="text" className="form-control" id="postCode2" />
                             </div>
                         </div>
 
                         <h4>Your package details</h4>
-                        <div class="col-md-2 me-4">
-                            <label for="inputWeight" class="form-label">Weight</label>
+                        <div className="col-md-2 me-4">
+                            <label htmlFor="inputWeight" className="form-label">Weight</label>
                             <div>
-                                <input type="text" class="form-control" id="inputWeight" />
+                                <input type="text" className="form-control" id="inputWeight" />
                             </div>
                         </div>
-                        <div class="col-md-2 me-4">
-                            <label for="inputLength" class="form-label">Length</label>
+                        <div className="col-md-2 me-4">
+                            <label htmlFor="inputLength" className="form-label">Length</label>
                             <div>
-                                <input type="text" class="form-control" id="inputLength" />
+                                <input type="text" className="form-control" id="inputLength" />
                             </div>
                         </div>
-                        <div class="col-md-2 me-4">
-                            <label for="inputWidth" class="form-label">Width</label>
+                        <div className="col-md-2 me-4">
+                            <label htmlFor="inputWidth" className="form-label">Width</label>
                             <div>
-                                <input type="text" class="form-control" id="inputWidth" />
+                                <input type="text" className="form-control" id="inputWidth" />
                             </div>
                         </div>
-                        <div class="col-md-2">
-                            <label for="inputHeight" class="form-label">Height</label>
+                        <div className="col-md-2">
+                            <label htmlFor="inputHeight" className="form-label">Height</label>
                             <div>
-                                <input type="text" class="form-control" id="inputHeight" />
+                                <input type="text" className="form-control" id="inputHeight" />
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck" />
-                                <label class="form-check-label" for="gridCheck">
+                        <div className="col-12">
+                            <div className="form-check">
+                                <input className="form-check-input" type="checkbox" id="gridCheck" />
+                                <label className="form-check-label" htmlFor="gridCheck">
                                     Sending Documents
                                 </label>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn-primary px-5">Quote me now</button>
+                        <div className="col-12">
+                            <button type="button" className="btn btn-primary px-5">Quote me now</button>
                         </div>
                     </form>
                 </div>

@@ -17,8 +17,8 @@ const Footer = () => {
                         <img src={navlogo} alt="" />
                     </div>
                     <div>
-                        <p className="ms-0">37/1, Adams road, Boston,<br />
-                            massachusetts, USA.</p>
+                        <p className="ms-0">7/6, Rams road, texas,<br />
+                            Florida, USA.</p>
                     </div>
                 </div>
                 <div className="col-md-4">
