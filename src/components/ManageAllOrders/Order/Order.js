@@ -12,7 +12,7 @@ const Order = ({ order }) => {
     const handleDeleteOrder = id => {
         const proceed = window.confirm("Are you sure to delete?");
         if (proceed) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://ghastly-mummy-59087.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -25,14 +25,14 @@ const Order = ({ order }) => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${_id}`)
+        fetch(`https://ghastly-mummy-59087.herokuapp.com/orders/${_id}`)
             .then(res => res.json())
             .then(data => setMyOrder(data))
     }, []);
 
     const handleStatus = id => {
         myOrder.status = 'approved';
-        fetch(`http://localhost:5000/orders/${id}`, {
+        fetch(`https://ghastly-mummy-59087.herokuapp.com/orders/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

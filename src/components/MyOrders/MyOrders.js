@@ -11,7 +11,7 @@ const MyOrders = () => {
     const valueArr = Object.values(loggedInUser);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders/byNames', {
+        fetch('https://ghastly-mummy-59087.herokuapp.com/orders/byNames', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

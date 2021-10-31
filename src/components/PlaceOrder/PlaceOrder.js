@@ -14,7 +14,7 @@ const PlaceOrder = () => {
     const { serviceId } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${serviceId}`)
+        fetch(`https://ghastly-mummy-59087.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, []);
@@ -30,7 +30,7 @@ const PlaceOrder = () => {
         newOrder.serviceRef = service._id;
         newOrder.status = 'Pending';
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://ghastly-mummy-59087.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
